@@ -38,7 +38,7 @@ const EmployeesComponent = (props) => {
                         element.employees ? (
                             element.employees.map((employee, ind) => (
                                 <li className="employee-wrapper" key={employee.id}>
-                                    <span class="item-name" onClick={() => handleClickEmployee(employee.id, ind)}>{employee.firstName} {employee.lastName}</span>
+                                    <span className="item-name" onClick={() => handleClickEmployee(employee.id, ind)}>{employee.firstName} {employee.lastName}</span>
 
                                     {openEmployeeDetails && openedId === ind ? (
                                         <ul className="employee-details-wrapper">
